@@ -1,7 +1,7 @@
-output "vpc1_instance_public_ip" {
-  value = aws_instance.vpc1_instance.public_ip
+output "instance1_ip" {
+  value = module.instance1.public_ip
 }
 
-output "vpc2_instance_public_ip" {
-  value = aws_instance.vpc2_instance.public_ip
+output "instance2_ip" {
+  value = module.instance2.public_ip
 }

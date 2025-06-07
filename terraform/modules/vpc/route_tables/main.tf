@@ -8,6 +8,7 @@ resource "aws_route_table" "route_table" {
       gateway_id = route.value["gateway_id"] == null ? "" : route.value["gateway_id"]
       nat_gateway_id = route.value["nat_gateway_id"] == null ? "" : route.value["nat_gateway_id"]
       transit_gateway_id = route.value["transit_gateway_id"] == null ? "" : route.value["transit_gateway_id"]
+      vpc_peering_connection_id =  route.value["vpc_peering_connection_id"] == null ? "" : route.value["vpc_peering_connection_id"]
     }
   }
   tags = {

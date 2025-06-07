@@ -4,6 +4,7 @@ variable "routes" {
     gateway_id = string
     nat_gateway_id = string
     transit_gateway_id = string
+    vpc_peering_connection_id = string
   }))
 }
 variable "vpc_id" {}
